@@ -1,4 +1,6 @@
-### **Entusiastas pela tecnologia !** <img src="./assets/img/logo-javascript.webp" style="display: inline" height="50px"><img src="./assets/img/logo-react.png" style="display: inline" height="53px"><img src="./assets/img/logo-nodejs.webp" style="display: inline" height="50px">
+<img src="./assets/img/logo-javascript.webp" height="25px"><img src="./assets/img/logo-react.png" height="25px"><img src="./assets/img/logo-nodejs.webp" height="25px">
+
+### **Entusiastas pela tecnologia !**
 
 Meu nome é **Caio Eduardo**, tenho 21 anos, moro no interior de São Paulo.
 
