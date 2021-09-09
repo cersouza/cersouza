@@ -1,0 +1,55 @@
+:root {
+  --white: white;
+  --black: black;
+  --light-blue: #2980b9;
+  --light-grey: #34495e;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+body, ul, button {
+  margin: 0;
+  padding: 0;
+}
+
+small {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--light-grey);
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  color: var(--white);
+  background-color: var(--light-grey);
+
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}
+
+button {
+  cursor: pointer;
+
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--light-blue);
+
+  transform: 0.2s;
+}
+
+a:hover {
+  filter: brightness(0.9);
+}
+
+@media screen and (min-height: 700px) {
+  * {
+    font-size: 16px;
+  }
+}

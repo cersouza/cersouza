@@ -1,0 +1,39 @@
+{
+  "person": {
+    "firstName": "Caio Eduardo",      
+    "description": "A front-end developer 💻 based in Brazil.",
+    "adjectives": [
+      "a curious developer 🤔",
+      "a creative person ✨",
+      "passionate about technology 👨‍💻",
+      "a lifelong learner 🎓",
+      "a person who likes to transfer acknowledgment to others",
+      "learning about Clean Architecture"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Simple Calculator",
+      "description": "A calculator made for learning of technologies.",
+      "link": "https://vue-calculator-app.vercel.app",
+      "stack": [
+        {
+          "name": "VueJS",
+          "link": "https://vuejs.org"
+        },
+        {
+          "name": "VueX",
+          "link": "https://vuex.vuejs.org"
+        },
+        {
+          "name": "Testing Library",
+          "link": "https://testing-library.com/docs/react-testing-library/intro/"
+        },
+        {
+          "name": "Jest",
+          "link": "https://jestjs.io/"
+        }
+      ]
+    }
+  ]
+}

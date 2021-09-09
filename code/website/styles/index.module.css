@@ -1,0 +1,56 @@
+.container {
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 1.5rem;
+
+  padding: 1.5rem 1rem;
+}
+
+.container > * {
+  max-width: 50rem;  
+}
+
+.container header a {
+  color: var(--black);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.project {
+  display: inline-block;
+
+  max-width: 20rem;
+  list-style-type: none;
+  border: 2px solid grey;
+  border-radius: 8px;
+
+  padding: 1.5rem 1rem;
+  transition: 0.2s;
+  cursor: pointer;
+
+  margin: 0 1rem 1rem 0;
+}
+
+.project:hover {
+  border: 2px solid var(--light-blue);
+}
+
+.projectTitle {
+  font-weight: 500;
+}
+
+.projectStackLogosList li {
+  list-style-type: none;
+  display: inline;
+  color: var(--light-grey);
+
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
