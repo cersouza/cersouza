@@ -46,11 +46,23 @@
   font-weight: 500;
 }
 
-.projectStackLogosList li {
+.projectStackList li {
   list-style-type: none;
   display: inline;
   color: var(--light-grey);
 
   font-size: 1rem;
   margin-left: 0.3rem;
+}
+
+.container .logo {
+  color: var(--light-grey);
+}
+
+.container details {
+  font-size: 1.3rem;
+}
+
+.container details ul {
+  padding: 0 1.5rem; 
 }

@@ -9,7 +9,13 @@
       "a lifelong learner 🎓",
       "a person who likes to transfer acknowledgment to others",
       "learning about Clean Architecture"
-    ]
+    ],
+    "details": {
+      "Birthday": "July 23th, 1999",
+      "Skills": "Node JS, React JS, Vue JS",
+      "Idioms": "French (Basic), English (Basic)",
+      "Hobbies": "Play guitar 🎸"
+    }
   },
   "projects": [
     {

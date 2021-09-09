@@ -32,9 +32,31 @@ const Home: NextPage = () => {
               <a onClick={changeCurrentAdjectiveIndex}><u>{personAdjective}</u>.</a>
             </Tooltip>
           </h1>
-          <p>{data.person.description}</p>
         </header>
         <main>
+          <p>
+            {data.person.description}
+
+            {
+              data.person.details && (
+                <details>
+                  <summary>See more about me</summary>
+                    <ul>
+                      {
+                        Object.keys(data.person.details).map((detailName: string, i) => (
+                          <li key={detailName}>
+                            <strong>{detailName}:</strong>
+                            {data.person.details[detailName]}
+                            { Object.keys(data.person.details).length > i + 1 ? ';' : '.' }
+                          </li>
+                        ))
+                      }
+                    </ul>
+                </details>
+              )
+            }
+          </p>
+
           <p>See my most recent projects:</p>
           <div>
             <ul className={styles.projectList}>
@@ -54,22 +76,24 @@ const Home: NextPage = () => {
                     
                     {
                       project.stack.length && (
-                        <ul className={styles.projectStackLogosList}>
-                          {
-                            project.stack.map((stack, i) => (
-                              <li key={`${project.name}-${stack.name}`}>
-                                <a
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  href={stack.link}
-                                >
-                                  {stack.name}
-                                  { project.stack.length > i + 1 ? ',' : '.' }
-                                </a>
-                              </li>
-                            ))
-                          }
-                        </ul>
+                        <p>
+                          <ul className={styles.projectStackList}>
+                            {
+                              project.stack.map((stack, i) => (
+                                <li key={`${project.name}-${stack.name}`}>
+                                  <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href={stack.link}
+                                  >
+                                    {stack.name}
+                                    { project.stack.length > i + 1 ? ',' : '.' }
+                                  </a>
+                                </li>
+                              ))
+                            }
+                          </ul>
+                        </p>
                       )
                     }
                   </li>
@@ -81,9 +105,10 @@ const Home: NextPage = () => {
         <footer>
           <Tooltip title="Go to my LinkedIn page">
             <IconButton
+              target="_blank"
+              className={styles.logo}
               aria-label="LinkedIn"
               href="https://www.linkedin.com/in/cersouza/"
-              target="_blank"
             >
               <LinkedIn fontSize="large"/>
             </IconButton>
@@ -91,9 +116,10 @@ const Home: NextPage = () => {
   
           <Tooltip title="Go to my GitHub page">
             <IconButton
-              aria-label="Github"
-              href="https://github.com/cersouza"
               target="_blank"
+              aria-label="Github"
+              className={styles.logo}
+              href="https://github.com/cersouza"
             >
               <GitHub fontSize="large"/>
             </IconButton>
