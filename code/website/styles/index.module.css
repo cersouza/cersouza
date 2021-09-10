@@ -28,7 +28,7 @@
 
   max-width: 20rem;
   list-style-type: none;
-  border: 2px solid grey;
+  border: 2px solid var(--light-grey);
   border-radius: 8px;
 
   padding: 1.5rem 1rem;

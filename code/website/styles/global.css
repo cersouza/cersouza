@@ -5,9 +5,10 @@
   --light-grey: #161a1d;
 }
 
-* {
-  font-family: 'Ubuntu', sans-serif;
+body {
   color: var(--black);
+  background-color: var(--white);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body, ul, button {
@@ -59,5 +60,13 @@ a:hover, summary:hover {
 @media screen and (min-height: 700px) {
   * {
     font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #fff;
+    --white: #0b090a;
+    --light-grey: #3a3a3a;
   }
 }
