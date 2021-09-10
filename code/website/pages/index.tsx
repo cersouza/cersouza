@@ -27,6 +27,15 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>{ data.person.firstName } | Page</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cersouza.vercel.app" />
+        <meta property="og:title" content={`${ data.person.firstName } portfolio`} />
+        <meta
+          property="og:description"
+          content="See Caio Eduardo Web Developer portfolio"
+        />
+        <meta property="og:image" content="/page-logo.png" />
       </Head>
       <div className={styles.container}>
         <header>
