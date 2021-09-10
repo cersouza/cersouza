@@ -1,13 +1,15 @@
 :root {
-  --white: white;
-  --black: black;
-  --light-blue: #2980b9;
-  --light-grey: #34495e;
+  --white: #fff;
+  --black: #0b090a;
+  --light-blue: #3A86FF;
+  --light-grey: #161a1d;
 }
 
 * {
   font-family: 'Ubuntu', sans-serif;
+  color: var(--black);
 }
+
 body, ul, button {
   margin: 0;
   padding: 0;

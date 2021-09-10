@@ -42,8 +42,9 @@
   border: 2px solid var(--light-blue);
 }
 
-.projectTitle {
+.projectTitle, .projectTitle * {
   font-weight: 500;
+  color: var(--light-blue);
 }
 
 .projectStackList li {
