@@ -40,6 +40,21 @@
           "link": "https://jestjs.io/"
         }
       ]
+    },
+    {
+      "name": "Wedding Site",
+      "description": "A wedding site made for friends.",
+      "link": "https://meucasamentoeternizado.com.br/stories/evelyn-e-samuel/convidado",
+      "stack": [
+        {
+          "name": "React JS",
+          "link": "https://reactjs.org"
+        },
+        {
+          "name": "Next JS",
+          "link": "https://nextjs.org"
+        }
+      ]
     }
   ]
 }
