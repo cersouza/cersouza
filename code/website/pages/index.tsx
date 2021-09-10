@@ -2,21 +2,26 @@ import { IconButton, Tooltip } from '@material-ui/core';
 import { GitHub, LinkedIn, OpenInNew } from '@material-ui/icons';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from '../styles/index.module.css';
-import data from '../config/data/cersouza.json';
 import { useState } from 'react';
+import Data from '../config/data/cersouza.json';
+import styles from '../styles/index.module.css';
+
+const data: any = Data;
 
 const personAdjectives = [data.person.firstName, ...data.person.adjectives];
 
 let currentAdjectiveIndex = 0;
 
+
 const Home: NextPage = () => {
   const [personAdjective, setPersonAdjective] = useState(personAdjectives[0]);
+  const [detailsIsOpen, setDetailsIsOpen] = useState(false);
 
   const changeCurrentAdjectiveIndex = () => {
     currentAdjectiveIndex =  personAdjectives.length > currentAdjectiveIndex + 1 ? currentAdjectiveIndex + 1 : 0;
     setPersonAdjective(personAdjectives[currentAdjectiveIndex]);
   };
+
 
   return (
     <>
@@ -40,12 +45,14 @@ const Home: NextPage = () => {
             {
               data.person.details && (
                 <details>
-                  <summary>See more about me</summary>
+                  <summary onClick={() => setDetailsIsOpen(!detailsIsOpen)}>
+                    {`${detailsIsOpen ? '🙊': '🙈'} See more about me`}
+                  </summary>
                     <ul>
                       {
-                        Object.keys(data.person.details).map((detailName: string, i) => (
+                        Object.keys(data.person.details).map((detailName: any, i) => (
                           <li key={detailName}>
-                            <strong>{detailName}:</strong>
+                            <strong>{detailName}: </strong>
                             {data.person.details[detailName]}
                             { Object.keys(data.person.details).length > i + 1 ? ';' : '.' }
                           </li>
@@ -61,7 +68,7 @@ const Home: NextPage = () => {
           <div>
             <ul className={styles.projectList}>
               {
-                data.projects.map((project) => (
+                data.projects.map((project: any) => (
                   <li key={project.name} className={styles.project}>
                     <a
                       target="_blank"
@@ -79,7 +86,7 @@ const Home: NextPage = () => {
                         <p>
                           <ul className={styles.projectStackList}>
                             {
-                              project.stack.map((stack, i) => (
+                              project.stack.map((stack: any, i: number) => (
                                 <li key={`${project.name}-${stack.name}`}>
                                   <a
                                     target="_blank"
