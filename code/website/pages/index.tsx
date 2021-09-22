@@ -1,4 +1,4 @@
-import { IconButton, Tooltip } from '@material-ui/core';
+import { Button, Grid, IconButton, Tooltip } from '@material-ui/core';
 import { GitHub, LinkedIn, OpenInNew } from '@material-ui/icons';
 import type { NextPage } from 'next';
 import Head from 'next/head';
@@ -78,18 +78,9 @@ const Home: NextPage = () => {
             <ul className={styles.projectList}>
               {
                 data.projects.map((project: any) => (
-                  <li key={project.name} className={styles.project}>
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href={project.link}
-                      className={styles.projectTitle}
-                    >
-                      <span>{project.name}</span>
-                      <OpenInNew />
-                    </a>
+                  <li key={project.name} className={styles.project}>             
+                    <p className={styles.projectTitle}>{project.name}</p> 
                     <p className={styles.projectDescription}>{project.description}</p>
-                    
                     {
                       project.stack.length && (
                         <p>
@@ -112,6 +103,30 @@ const Home: NextPage = () => {
                         </p>
                       )
                     }
+                    <Grid container spacing={2}>
+                      <Grid item>
+                        <Button
+                          color="primary"
+                          variant="outlined"
+                          endIcon={<OpenInNew />}
+                          target="_blank"
+                          href={project.link}
+                        >
+                          View Demo
+                        </Button>
+                      </Grid>
+                      <Grid item>
+                        <Button
+                          color="primary"
+                          variant="outlined"
+                          endIcon={<OpenInNew />}
+                          target="_blank"
+                          href={project.repository}
+                        >
+                          View Code
+                        </Button>
+                      </Grid>
+                    </Grid>
                   </li>
                 ))
               }

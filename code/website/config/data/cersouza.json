@@ -22,6 +22,7 @@
       "name": "Simple Calculator",
       "description": "A calculator made for learning of technologies.",
       "link": "https://vue-calculator-app.vercel.app",
+      "repository": "https://github.com/cersouza/vue-calculator-app",
       "stack": [
         {
           "name": "VueJS",
@@ -45,6 +46,7 @@
       "name": "Wedding Site",
       "description": "A wedding site made for friends.",
       "link": "https://meucasamentoeternizado.com.br/stories/evelyn-e-samuel/convidado",
+      "repository": "https://github.com/cersouza/web-wedding-salyn",
       "stack": [
         {
           "name": "React JS",

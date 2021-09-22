@@ -33,7 +33,6 @@
 
   padding: 1.5rem 1rem;
   transition: 0.2s;
-  cursor: pointer;
 
   margin: 0 1rem 1rem 0;
 }
@@ -45,6 +44,8 @@
 .projectTitle, .projectTitle * {
   font-weight: 500;
   color: var(--light-blue);
+
+  margin: 0;
 }
 
 .projectStackList li {
