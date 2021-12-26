@@ -60,7 +60,7 @@
     },
     {
       "name": "NodeJS API Boilerplate",
-      "description": "An API boilerplate made with Clean Architecture and TypeScript",
+      "description": "An API boilerplate made with Clean Architecture and TypeScript.",
       "repository": "https://github.com/cersouza/nodejs-app-boilerplate",
       "stack": [
         {
