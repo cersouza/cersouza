@@ -13,8 +13,8 @@
     "details": {
       "Birthday": "July 23th, 1999",
       "Skills": "Node JS, React JS, Vue JS",
-      "Idioms": "French (Basic), English (Basic)",
-      "Hobbies": "Play guitar 🎸"
+      "Idioms": "French (Intermediate), English (Intermediate)",
+      "Hobbies": "Play piano 🎹"
     }
   },
   "projects": [
@@ -55,6 +55,25 @@
         {
           "name": "Next JS",
           "link": "https://nextjs.org"
+        }
+      ]
+    },
+    {
+      "name": "NodeJS API Boilerplate",
+      "description": "An API boilerplate made with Clean Architecture and TypeScript.",
+      "repository": "https://github.com/cersouza/nodejs-app-boilerplate",
+      "stack": [
+        {
+          "name": "Express",
+          "link": "https://expressjs.com/"
+        },
+        {
+          "name": "TypeScript",
+          "link": "https://www.typescriptlang.org/"
+        },
+        {
+          "name": "Jest",
+          "link": "https://jestjs.io/"
         }
       ]
     }

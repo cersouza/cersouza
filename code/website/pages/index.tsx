@@ -104,17 +104,21 @@ const Home: NextPage = () => {
                       )
                     }
                     <Grid container spacing={2}>
-                      <Grid item>
-                        <Button
-                          color="primary"
-                          variant="outlined"
-                          endIcon={<OpenInNew />}
-                          target="_blank"
-                          href={project.link}
-                        >
-                          View Demo
-                        </Button>
-                      </Grid>
+                      {
+                        project.link && (
+                          <Grid item>
+                            <Button
+                              color="primary"
+                              variant="outlined"
+                              endIcon={<OpenInNew />}
+                              target="_blank"
+                              href={project.link}
+                            >
+                              View Demo
+                            </Button>
+                          </Grid>
+                        )
+                      }
                       <Grid item>
                         <Button
                           color="primary"
